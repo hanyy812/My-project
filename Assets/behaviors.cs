@@ -20,7 +20,9 @@ public class behaviors : MonoBehaviour
     private SpriteRenderer spriteRenderer;// Start is called before the first frame update
     void Start()
     {
-         anim= GetComponent<Animator>();
+         rb = GetComponent<Rigidbody2D>();
+    anim = GetComponent<Animator>();
+    spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
